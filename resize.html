@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+<style>
+
+#table-css-border-1 {
+	width:100%;
+        border-style: outset; 
+        border-width: 1px; 
+        border-spacing: 2px; 
+} 
+
+#table-css-border-1 td, #table-css-border-1 th { 
+        border-style: inset; 
+        border-width: 1px;
+}
+
+</style>
+
+  <script>
+  $(function() {
+    $( "#table-css-border-1 tr th" ).resizable({
+      handles: 'e'
+    });
+  });
+  </script>
+
+</head>
+
+<body>
+ 
+<table id="table-css-border-1" class="ui-widget-content">
+    <tr>
+        <th>header1</th>
+        <th>header2</th>
+        <th>header3</th>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+</body>
+
+</html>
